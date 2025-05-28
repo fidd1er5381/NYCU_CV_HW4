@@ -1,4 +1,4 @@
-
+![image](https://github.com/user-attachments/assets/e719979f-2d58-4e96-8b28-f0d5409f439b)
 # NYCU Computer Vision 2025 Spring - Homework 3
 
 StudentID: 313553023  
@@ -75,7 +75,6 @@ generate_predictions_with_tta(
 This will generate:
 - `pred.npz`: Image restoration results in the required format for Kaggle submission
 
-## Performance Snapshot
 
 ### Model Architecture
 - **Backbone**: Enhanced U-Net with skip connections
@@ -99,6 +98,9 @@ This will generate:
 - **SSIM**: 0.851
 - **Rain PSNR**: 28.41 dB
 - **Snow PSNR**: 28.27 dB
+
+## Performance Snapshot
+![image](https://github.com/user-attachments/assets/6b45843d-27ed-4856-a5ff-905d647c3e37)
 
 ## Outputs
 
@@ -184,22 +186,6 @@ These techniques together significantly improve restoration quality, especially 
 | + Prompt Learning | 28.34 | 0.851 | +0.004 SSIM |
 | + Combined Loss | **28.34** | **0.851** | Final Result |
 
-## File Structure
-
-```
-├── run.py                    # Main training and inference script
-├── requirements.txt          # Python dependencies
-├── README.md                # This documentation
-├── best_model.pth           # Trained model weights (generated)
-├── pred.npz                 # Test predictions (generated)
-├── training_curves.png      # Training visualization (generated)
-└── hw4_realse_dataset/      # Dataset directory
-    ├── train/
-    │   ├── degraded/
-    │   └── clean/
-    └── test/
-        └── degraded/
-```
 
 ## Technical Implementation
 
