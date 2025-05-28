@@ -177,14 +177,15 @@ These techniques together significantly improve restoration quality, especially 
 
 ## Ablation Study Results
 
-| Component | PSNR (dB) | SSIM | Improvement |
-|-----------|-----------|------|-------------|
-| Base U-Net | 26.82 | 0.821 | Baseline |
-| + Channel Attention | 27.45 | 0.834 | +0.63 dB |
-| + Spatial Attention | 27.23 | 0.829 | +0.41 dB |
-| + CBAM (Both) | 28.34 | 0.847 | +1.52 dB |
-| + Prompt Learning | 28.34 | 0.851 | +0.004 SSIM |
-| + Combined Loss | **28.34** | **0.851** | Final Result |
+Based on the implemented architecture components:
+
+| Component | Description | Key Features |
+|-----------|-------------|--------------|
+| Base U-Net | Encoder-decoder with skip connections | Standard U-Net architecture |
+| + CBAM Attention | Channel + Spatial attention | Dual attention in residual blocks |
+| + Prompt Learning | PromptIR-inspired modules | Adaptive prompt generation and fusion |
+| + Combined Loss | L1 + SSIM + Perceptual | Multi-objective optimization |
+| **Final Model** | **Complete implementation** | **28.34 dB PSNR on Kaggle** |
 
 
 ## Technical Implementation
