@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/e719979f-2d58-4e96-8b28-f0d5409f439b)
 # NYCU Computer Vision 2025 Spring - Homework 3
 
 StudentID: 313553023  
