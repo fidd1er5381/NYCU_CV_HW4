@@ -1,4 +1,4 @@
-# NYCU Computer Vision 2025 Spring - Homework 3
+# NYCU Computer Vision 2025 Spring - Homework 4
 
 StudentID: 313553023  
 Name: 褚敏匡
@@ -11,8 +11,8 @@ This repository contains an implementation of an enhanced U-Net model with Promp
 
 1. Clone the repository:
 ```bash
-git clone [your-repository-url]
-cd hw4
+git clone https://github.com/fidd1er5381/NYCU_CV_HW4.git
+cd NYCU_CV_HW4
 ```
 
 2. Create a virtual environment:
@@ -94,9 +94,6 @@ This will generate:
 
 ### Performance Metrics
 - **PSNR**: 28.34 dB
-- **SSIM**: 0.851
-- **Rain PSNR**: 28.41 dB
-- **Snow PSNR**: 28.27 dB
 
 ## Performance Snapshot
 ![image](https://github.com/user-attachments/assets/6b45843d-27ed-4856-a5ff-905d647c3e37)
@@ -187,32 +184,4 @@ Based on the implemented architecture components:
 | **Final Model** | **Complete implementation** | **28.34 dB PSNR on Kaggle** |
 
 
-## Technical Implementation
-
-### Memory Optimization
-To ensure efficient training and inference:
-- Gradient accumulation for effective larger batch sizes
-- Memory-efficient attention computation
-- Optimized data loading with proper num_workers
-
-### Training Stability
-- Gradient clipping to prevent exploding gradients
-- Early stopping to prevent overfitting
-- Learning rate scheduling for optimal convergence
-
-### Inference Optimization
-- Test-time augmentation for improved results
-- Post-processing pipeline for enhanced visual quality
-- Efficient batch processing for faster inference
-
-
-## References
-
-1. Valanarasu, J. M. J., & Patel, V. M. (2023). PromptIR: Prompting for All-in-One Blind Image Restoration. arXiv preprint arXiv:2306.13090.
-
-2. Ronneberger, O., Fischer, P., & Brox, T. (2015). U-net: Convolutional networks for biomedical image segmentation. MICCAI.
-
-3. Woo, S., Park, J., Lee, J. Y., & Kweon, I. S. (2018). CBAM: Convolutional block attention module. ECCV.
-
-4. Wang, Z., Bovik, A. C., Sheikh, H. R., & Simoncelli, E. P. (2004). Image quality assessment: from error visibility to structural similarity. IEEE TIP.
 
